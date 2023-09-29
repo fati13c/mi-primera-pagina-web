@@ -1,56 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mi Página Web Sencilla</title>
-  <style>
+    <meta charset="UTF-8">
+    <title>Plataforma Nueve y Tres Cuartos</title>
+    <style>
+        /* Estilos CSS para dar formato a la página */
+        
+        /* Estilos globales */
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00BCD4;
     }
 
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Estilos para el encabezado */
+    header {
+        background-color: #FFD600;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
     }
 
-    h1 {
-      color: #333;
-      text-align: center;
+	/* Estilos para la imagen del logo */
+    header img {
+    	width: 200px; /* Cambia este valor al ancho deseado */
+	height: auto; /* Esto mantiene la proporción de aspecto 	original */
+	Border-radius: 50%; /* Opcional: agregar bordes redondeados a la 	imagen */
+}
+
+    header h1 {
+        font-size: 36px;
     }
 
-    p {
-      color: #666;
-      line-height: 1.5;
+    /* Estilos para la barra de navegación */
+    nav {
+        background-color: #673AB7;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
     }
 
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #333;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 3px;
-      transition: background-color 0.3s ease;
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
     }
 
-    .button:hover {
-      background-color: #555;
+    /* Estilos para las secciones */
+    .section {
+        padding: 40px;
+        background-color: #3F51B5;
+	color: #fff;
+        margin: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-  </style>
+
+    .section h2 {
+        font-size: 24px;
+    }
+
+    /* Estilos para el pie de página */
+    footer {
+        background-color: #FFD600;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Estilos para los enlaces en el pie de página */
+    footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Bienvenido a mi página web sencilla</h1>
-    <p>¡Hola! Esta es una página web sencilla de ejemplo.</p>
-    <p>Puedes agregar más contenido aquí, como imágenes, enlaces y otros elementos.</p>
-    <p>También puedes añadir estilos adicionales utilizando CSS.</p>
-    <a class="button" href="#">Botón de ejemplo</a>
-  </div>
+    <header>
+	<img src="https://img.freepik.com/vector-gratis/varita-magica-composicion-realista_1284-18389.jpg?w=360&t=st=1695390410~exp=1695391010~hmac=45cef244c27dc42e5ce0708fd408e46fc0865118e45fd301c70b58284bd925ab" alt="Logo de Plataforma 9¾">
+        <h1>Plataforma Nueve y Tres Cuartos</h1>
+        <p>¡Donde la magia y los pasteles se encuentran!</p>
+    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <section id="inicio" class="section">
+        <h2>Bienvenido a nuestro mundo mágico</h2>
+        <p>En Plataforma 9¾, cada pastel es una obra de arte inspirada en Harry Potter. Saborea la magia con cada bocado.</p>
+    </section>
+    <section id="productos" class="section">
+        <h2>Nuestros Deliciosos Productos</h2>
+        <p>Descubre una selección única de pasteles y postres inspirados en el mundo de Harry Potter. Cada creación es mágica.</p>
+    </section>
+    <section id="contacto" class="section">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes alguna pregunta o quieres hacer un pedido personalizado? ¡Estamos aquí para ayudarte!</p>
+        <p>Correo electrónico: info@plataforma9y3/4.com</p>
+    </section>
 </body>
 </html>
